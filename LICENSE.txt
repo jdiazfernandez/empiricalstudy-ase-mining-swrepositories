@@ -1,4 +1,4 @@
-Copyright (c) 2026 Jessica Diaz, Jorge Perez, Sergio Gil
+Copyright (c) 2026 Jessica Diaz, Jorge Perez, Sergio Gil-Borras
 Universidad Politecnica de Madrid
 
 This package is licensed in two parts.

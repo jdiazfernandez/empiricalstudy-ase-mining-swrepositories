@@ -54,15 +54,15 @@ EXTREME_AGREEMENT_MIN = 0.90
 # recomputed: the rule is about a HISTORY of failures, and the scorer only ever
 # sees one iteration at a time.
 #
-# 2026-08-21, PI directive: the it2 (0.468/0.444) figures below were computed
-# from coder CSVs that the PI subsequently corrected (five M6/M8 label fixes
-# on R031/R041/R049/R057). The PI asked that this corrected it2 be treated as
-# the first legitimate it2 measurement, not as a second strike on top of the
-# superseded one -- so M6/M8 are NOT held EXPLORATORY for this run. The two-
-# strikes rule itself stands (PI confirmed); it just hasn't fired yet under
-# the corrected data. If a *fresh* it2 recomputation (on this corrected data)
-# fails reliability again after a targeted amendment, THAT is strike two and
-# EXHAUSTED should be restored with the new numbers.
+# 2026-08-21: the it2 figures below (0.468/0.444) were computed from coder
+# CSVs later found to contain transcription errors (five M6/M8 label fixes on
+# R031/R041/R049/R057). The corrected it2 is treated as the first legitimate
+# it2 measurement, not as a second strike on top of the superseded one -- so
+# M6/M8 are NOT held EXPLORATORY for this run. The two-strikes rule itself
+# stands; it just has not fired under the corrected data. If a *fresh* it2
+# recomputation (on this corrected data) fails reliability again after a
+# targeted amendment, THAT is strike two and EXHAUSTED should be restored
+# with the new numbers.
 EXHAUSTED = {
     # "M6": "failed it1 (0.526) and it2 (0.468 pre-correction), the second "
     #       "after a targeted amendment in v2 1.1 -- superseded 2026-08-21",

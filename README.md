@@ -2,7 +2,7 @@
 
 **Methodological Harness in Agentic Software Engineering: An Empirical Study on
 Mining Software Repositories**
-Jessica Diaz, Jorge Perez, Sergio Gil — Universidad Politecnica de Madrid
+Jessica Diaz, Jorge Perez, Sergio Gil-Borras — Universidad Politecnica de Madrid
 
 ---
 
