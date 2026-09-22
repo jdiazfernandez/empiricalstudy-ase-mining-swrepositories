@@ -1,0 +1,35 @@
+# Dependencies for the mining and analysis pipeline (spec 002, blocker B2).
+#
+# Python 3.12 (developed and verified on 3.12.10).
+#
+#     python -m venv .venv
+#     .venv\Scripts\activate        # Windows
+#     source .venv/bin/activate     # Linux / macOS
+#     pip install -r requirements.txt
+#
+# Versions are pinned exactly, not floated: a replication package whose numbers
+# depend on whatever pandas happened to be current is not replicable. These are
+# the versions the published figures were produced with.
+
+duckdb==1.5.5              # SQL over the AIDev parquet tables, without loading them
+pandas==3.0.5              # dataframes; parquet I/O in the classify stage
+pyarrow==25.0.1            # parquet engine behind pandas.to_parquet / read_parquet
+numpy==2.5.2               # Wilson intervals and the reweighting arithmetic
+matplotlib==3.11.1         # the two figures in the results section
+huggingface_hub==1.27.0    # downloads the pinned AIDev revision (acquire stage only)
+
+# langdetect backs the corpus-language analysis (src/qual/detect_language.py).
+#
+# KNOWN INSTALL FAILURE, and why the code has a fallback: langdetect 1.0.9 ships
+# only as a source distribution, so pip must build it. On a Windows account whose
+# user name contains a "$", setuptools reads the "$..." as a variable while
+# computing install paths and aborts with
+#     ValueError: invalid variable '<...>'
+# The build failure is entirely about the account name; the library itself is
+# pure Python and runs fine. On such a machine, unpack the sdist anywhere and
+# point the code at it instead of installing:
+#
+#     LANGDETECT_PATH=/path/to/unpacked  python src/qual/h5_language_sensitivity.py
+#
+# Everywhere else the line below installs normally and no variable is needed.
+langdetect==1.0.9
