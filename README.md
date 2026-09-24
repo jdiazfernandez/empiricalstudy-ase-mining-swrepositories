@@ -74,8 +74,11 @@ qual/                  the human-coding instrument and its output
 
 data/                  the files our scripts read that are ours to ship
   qual_sample_key.csv                   item id -> repository and stratum
-  consultation_validation_sample_full.csv   the 536 comments coded for H6
+  consultation_validation_sample_full.csv   the 536 items selected for human
+                                            validation of the H6 classifier
   consultation_report_full.json         the H6 detector's block populations
+  consultations_full.parquet            classifier features for all scanned
+                                        comments and PR bodies; text omitted
   replication/
     pi2_corpus_pointers.csv             repository, path, commit, blob SHA of
                                         every coded rule file

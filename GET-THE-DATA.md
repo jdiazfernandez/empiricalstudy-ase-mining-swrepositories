@@ -54,6 +54,8 @@ This downloads the corresponding tables into `data/aidev/` (approximately 117 MB
 
 ## Step 3 — Reconstruct the sample
 
+### Step 3.1 — Select the repositories
+
 ```bash
 python src/mine/select_sample.py
 ```
@@ -68,6 +70,21 @@ guarantee than a copied file, since a file can be edited and a hash cannot.
 
 The design consists of a census of the highest-visibility stratum plus 1,000
 repositories drawn from each of three lower-visibility strata.
+
+### Step 3.2 — Classify structured consultations (H6)
+
+```bash
+python src/classify/consultation_full.py
+```
+
+This runs the H6 structured-consultation classifier over stratum P. It writes
+`data/consultation_report_full.json`, which summarizes the classifier results
+and records how the validation sample was selected, and
+`data/consultation_validation_sample_full.csv`, which contains the selected
+items, their text, and classifier features for human validation. Its
+`human_label_BLANK` column is intentionally left blank for the human coder. The
+run also writes `data/consultations_full.parquet`, containing classifier
+features for all scanned comments and PR bodies; it omits the original text.
 
 ---
 

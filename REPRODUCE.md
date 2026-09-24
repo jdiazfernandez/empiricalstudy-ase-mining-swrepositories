@@ -63,7 +63,7 @@ On `D/h5_zero_candidates.json`: no script in this package produces it. See the
 | **Table 1** — sampling design | `src/mine/select_sample.py` → `D/sample_frame.csv`, plus the population counts from AIDev |
 | **Table 2** — operationalization of the mechanisms | the detection patterns, published in full inside `src/mine/mine_harness.py` |
 | **Table A.1** — AIDev scale by stratum | row counts from `DATASET_VERSION.md` and `src/ingest/step_zero.py` |
-| **Table A.2** — composition of the H6 text corpus, by surface and authorship | `python src/classify/consultation_full.py` (needs the AIDev comment tables, step 2); the `surface` and `agent_authored` columns of its output |
+| **Table A.2** — composition of the H6 text corpus, by surface and authorship | `python src/classify/consultation_full.py` (needs the AIDev comment tables, Step 2); read the `surface` and `agent_authored` columns from `data/consultations_full.parquet` |
 | **Table B.1** — the same question under three readings | worked example; derived from Tables 5 and 10 |
 | **Figures 1–2** — the harness, and the study design | drawn by the authors |
 
