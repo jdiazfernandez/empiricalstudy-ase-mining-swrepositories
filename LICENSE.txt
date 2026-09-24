@@ -1,0 +1,52 @@
+Copyright (c) 2026 Jessica Diaz, Jorge Perez, Sergio Gil
+Universidad Politecnica de Madrid
+
+This package is licensed in two parts.
+
+=====================================================================
+1. CODE -- src/, tests/, requirements.txt -- MIT License
+=====================================================================
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+=====================================================================
+2. DATA AND DOCUMENTATION -- qual/, data/, *.md -- CC BY 4.0
+=====================================================================
+
+The codebooks, the coding protocol, the coders' labels, the corpus pointers,
+and the documentation in this package are licensed under the Creative Commons
+Attribution 4.0 International licence:
+https://creativecommons.org/licenses/by/4.0/
+
+ONE EXCEPTION, WHICH WE CANNOT RELICENSE:
+
+data/consultation_validation_sample_full.csv contains 536 pull-request
+comments drawn from the AIDev dataset (Hugging Face, hao-li/AIDev, revision
+68ed5f4b80d27a9e057fc57567f38bd322ac73ec). AIDev is published by its own
+authors under CC BY 4.0, which permits redistributing this subset with
+attribution; that attribution is hereby given, and the dataset -- not this
+package -- should be cited for it. See DATASET_VERSION.md.
+
+WHAT IS NOT IN THIS PACKAGE, AND WHY:
+
+No content of the mined repositories is included -- no rule-file text, no
+cloned source. Those files remain under whatever licence each repository
+declares, and most declare none, which means all rights reserved. The package
+instead ships content-addressed pointers (data/replication/pi2_corpus_pointers.csv)
+from which any coded file can be retrieved from its source and verified by hash.

@@ -1,0 +1,63 @@
+{
+  "tier1_pointer_rows": 285,
+  "tier1_repositories": 150,
+  "pointers_missing_blob_sha": 0,
+  "licence_distribution": {
+    "MIT": 67,
+    "NO_LICENCE_DECLARED": 64,
+    "NOASSERTION": 57,
+    "Apache-2.0": 36,
+    "AGPL-3.0": 33,
+    "GPL-3.0": 13,
+    "ISC": 12,
+    "MPL-2.0": 1,
+    "CC0-1.0": 1,
+    "GPL-2.0": 1
+  },
+  "tier2_files_written": 164,
+  "tier2_repositories": 96,
+  "tier2_excluded_repositories": 54,
+  "redistributable_licences": [
+    "AGPL-3.0",
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "BSL-1.0",
+    "CC-BY-4.0",
+    "CC0-1.0",
+    "EPL-2.0",
+    "GPL-2.0",
+    "GPL-3.0",
+    "ISC",
+    "LGPL-2.1",
+    "LGPL-3.0",
+    "MIT",
+    "MPL-2.0",
+    "Unlicense",
+    "Zlib"
+  ],
+  "tier3_cells_scanned": 594,
+  "tier3_quotes_found": 40,
+  "tier3_quotes_redacted": 11,
+  "tier3_redacted_items": [
+    "R003",
+    "R027",
+    "R034",
+    "R038",
+    "R043",
+    "R050",
+    "R054",
+    "R055",
+    "R059"
+  ],
+  "tier3_files": [
+    "rulefiles_coder1_it1.csv",
+    "rulefiles_coder1_it2.csv",
+    "rulefiles_coder2_it1.csv",
+    "rulefiles_coder2_it2.csv",
+    "rulefiles_resolved_it2.csv",
+    "labels_coder1_full.csv",
+    "labels_coder2_full.csv"
+  ],
+  "note": "Three distinct states, none of them permissive by default: NOASSERTION = a licence file exists but is not a recognised standard one; NO_LICENCE_DECLARED = none at all, so all rights reserved; a named SPDX identifier = redistribution permitted under its own terms. Only the third enters tier 2."
+}
