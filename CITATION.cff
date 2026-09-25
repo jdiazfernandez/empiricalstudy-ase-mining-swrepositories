@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite it using the metadata below."
+type: software
+title: "Replication Package for \"Methodological Harness in Agentic Software Engineering: An Empirical Study on Mining Software Repositories\""
+version: "1.0.0"
+authors:
+  - family-names: Díaz Fernández
+    given-names: Jessica
+    affiliation: "Universidad Politécnica de Madrid (UPM), Escuela Técnica Superior de Ingeniería de Sistemas Informáticos, Departamento Universitario de Sistemas Informáticos"
+    orcid: "https://orcid.org/0000-0001-6738-9370"
+  - family-names: Pérez Martínez
+    given-names: Jorge Enrique
+    affiliation: "Universidad Politécnica de Madrid (UPM), Escuela Técnica Superior de Ingeniería de Sistemas Informáticos, Departamento Universitario de Sistemas Informáticos"
+    orcid: "https://orcid.org/0000-0003-3349-6017"
+  - family-names: Gil Borrás
+    given-names: Sergio
+    affiliation: "Universidad Politécnica de Madrid (UPM), Escuela Técnica Superior de Ingeniería de Sistemas Informáticos, Departamento Universitario de Sistemas Informáticos"
+    orcid: "https://orcid.org/0000-0003-1804-7379"
+keywords:
+  - mining software repositories
+  - agentic software engineering
+  - replication package
+  - reproducibility
